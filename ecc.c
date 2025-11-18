@@ -41,11 +41,11 @@ Ponto soma(Ponto P, Ponto Q, long long a, long long p) {
 
     /* 
     se P == Q e Q.y != 0:
-        m = (3*x1^2 + a) / (2*y1) mod p
+        m = (3*x1^2 + a) / (2*y1) mod p === m = (3*x1^2 + a) * (2*y1)^(-1) mod p
     se P != Q:
         se x1 == x2: 
             retorna O
-        m = (y2 - y1) / (x2 - x1) mod p
+        m = (y2 - y1) / (x2 - x1) mod p === m = (y2 - y1) * (x2 - x1)^(-1) mod p
     */
 
     long long lambda;
